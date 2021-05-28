@@ -1,5 +1,5 @@
 #display {
-    background-image: url("../images/Rooms/RoomWithCeilingHole.png");
+    background-image: url("../images/rooms/RoomWithCeilingHole.png");
 }
 
 #door1 {
@@ -20,7 +20,7 @@
     top: 5%;
     height: 90%;
     width: 50%;
-    background-image: url("../images/Puzzles/GemRoom/puzzleCompleteScreen.png");
+    background-image: url("../images/puzzles/GemRoom/puzzleCompleteScreen.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -33,7 +33,7 @@
     top: 5%;
     height: 90%;
     width: 50%;
-    background-image: url("../images/Puzzles/GemRoom/puzzleScreen.png");
+    background-image: url("../images/puzzles/GemRoom/puzzleScreen.png");
     background-repeat: no-repeat;
     background-size: 100%;
 }

@@ -1,17 +1,17 @@
-#display{
-    background-image: url("../images/Rooms/background.png");
+#display {
+    background-image: url("../images/rooms/background.png");
 }
 
 * {
     border: none;
 }
 
-#board{
+#board {
     position: absolute;
     top: 30%;
     left: 20%;
     margin: auto;
-    width:  60%;
+    width: 60%;
     /*padding: 30px;*/
 }
 
@@ -29,18 +29,17 @@
 }
 
 .column a polygon {
-    fill:rgba(0, 0, 0, 0);
+    fill: rgba(0, 0, 0, 0);
     stroke: rgba(0, 0, 0, 0);
-    stroke-width:1%;
+    stroke-width: 1%;
 }
 
 .column a polygon:hover {
     stroke: rgb(0, 255, 255);
 }
 
-.column img,input,svg {
+.column img,
+input,
+svg {
     width: 100%;
 }
-
-
-
