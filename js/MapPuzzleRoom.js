@@ -1,6 +1,6 @@
 function fillBackgrounds() {
     document.getElementById("display").style.backgroundImage = "url(images/Rooms/RoomWithCeilingHole.png)";
-    document.getElementById("puzzleScreen").style.backgroundImage = "url(images/Puzzles/MapPuzzleRoom/PuzzleMapGrid.png)";
+    document.getElementById("puzzleScreen").style.backgroundImage = "url(images/puzzles/MapPuzzleRoom/PuzzleMapGrid.png)";
     var rooms = JSON.parse(sessionStorage.getItem('rooms'));
     var currentRoomIndex = 0;
     while (!rooms[currentRoomIndex].currentRoom) currentRoomIndex++;

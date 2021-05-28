@@ -40,16 +40,16 @@ function checkAns(textbox, button1, button2, ans, back) {
         lockpickSSound.play();
         switch (back) {
             case 1:
-                document.getElementById("display").style.backgroundImage = "url('images/Puzzles/lockpicking/Lockpick_1pin.png')";
+                document.getElementById("display").style.backgroundImage = "url('images/puzzles/lockpicking/Lockpick_1pin.png')";
                 break;
             case 2:
-                document.getElementById("display").style.backgroundImage = "url('images/Puzzles/lockpicking/Lockpick_2pin.png')";
+                document.getElementById("display").style.backgroundImage = "url('images/puzzles/lockpicking/Lockpick_2pin.png')";
                 break;
             case 3:
-                document.getElementById("display").style.backgroundImage = "url('images/Puzzles/lockpicking/Lockpick_3pin.png')";
+                document.getElementById("display").style.backgroundImage = "url('images/puzzles/lockpicking/Lockpick_3pin.png')";
                 break;
             case 4:
-                document.getElementById("display").style.backgroundImage = "url('images/Puzzles/lockpicking/Lockpick_4pin.png')";
+                document.getElementById("display").style.backgroundImage = "url('images/puzzles/lockpicking/Lockpick_4pin.png')";
                 document.getElementById("Success").style.display = "block";
                 setTimeout(function() { document.getElementById("Success").style.display = "none"; }, 2000);
                 unlockSound.play();

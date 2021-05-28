@@ -1,12 +1,12 @@
 function fillBackgrounds() {
     document.getElementById("display").style.backgroundImage = "url(images/Rooms/RoomWithCeilingHole.png)";
-    document.getElementById("puzzleScreen").style.backgroundImage = "url(images/Puzzles/GemRoom/puzzleScreen.png)";
+    document.getElementById("puzzleScreen").style.backgroundImage = "url(images/puzzles/GemRoom/puzzleScreen.png)";
     var rooms = JSON.parse(sessionStorage.getItem('rooms'));
     var currentRoomIndex = 0;
     while (!rooms[currentRoomIndex].currentRoom) currentRoomIndex++;
     if (rooms[currentRoomIndex].puzzleSolved == true) {
         document.getElementById('puzzleLink').onclick = '';
-        document.getElementById('gemPuzzle-image').src = 'images/Puzzles/GemRoom/CompletePuzzleBoard.png';
+        document.getElementById('gemPuzzle-image').src = 'images/puzzles/GemRoom/CompletePuzzleBoard.png';
     }
 }
 
@@ -55,12 +55,12 @@ function changePuzzleCompleteIndex(index) {
 }
 
 function endPuzzle() {
-    document.getElementById('puzzleCompleteScreen').style.backgroundImage = 'url(images/Puzzles/GemRoom/puzzleCompleteScreen.png)';
+    document.getElementById('puzzleCompleteScreen').style.backgroundImage = 'url(images/puzzles/GemRoom/puzzleCompleteScreen.png)';
     document.getElementById('puzzleScreen').style.zIndex = -1;
     changePuzzleCompleteIndex(2);
     setTimeout(function() { changePuzzleCompleteIndex(-1); }, 1000);
     document.getElementById('puzzleLink').onclick = '';
-    setTimeout(function() { document.getElementById('gemPuzzle-image').src = 'images/Puzzles/GemRoom/CompletePuzzleBoard.png'; }, 1000);
+    setTimeout(function() { document.getElementById('gemPuzzle-image').src = 'images/puzzles/GemRoom/CompletePuzzleBoard.png'; }, 1000);
 
     var rooms = JSON.parse(sessionStorage.getItem('rooms'));
     var currentRoomIndex = 0;

@@ -1,5 +1,5 @@
 window.onload = randomize;
-var images = ["images/Puzzles/Symbol1.png", "images/Puzzles/Symbol2.png", "images/Puzzles/Symbol3.png", "images/Puzzles/Symbol4.png", "images/Puzzles/Symbol5.png"];
+var images = ["images/puzzles/Symbol1.png", "images/puzzles/Symbol2.png", "images/puzzles/Symbol3.png", "images/puzzles/Symbol4.png", "images/puzzles/Symbol5.png"];
 var used = [];
 var clicked = [];
 var topImages = [];
