@@ -1,0 +1,214 @@
+#display {
+    background-image: url("../images/rooms/CardGameBoard.png");
+}
+
+.card-row {
+    text-align: center;
+    height: 35%;
+    width: 94%;
+}
+
+@media only screen and (min-aspect-ratio: 5/2) {
+     :root {
+        --diplay-width: 144vh;
+        --diplay-height: 81vh;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 5/2) {
+     :root {
+        --diplay-width: 62vw;
+        --diplay-height: 35.4375vw;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 3/2) {
+     :root {
+        --diplay-width: 81vw;
+        --diplay-height: 45.5625vw;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 1/1) {
+     :root {
+        --diplay-width: 90vw;
+        --diplay-height: 50.625vw;
+    }
+}
+
+.card {
+    display: inline-block;
+    position: relative;
+    width: 11.565%;
+    height: 90%;
+    margin-top: 2%;
+    font-size: calc(var(--diplay-height)*0.35*0.9*0.06);
+}
+
+.card:hover {
+    margin-top: 0%;
+    width: 12.85%;
+    height: 100%;
+    font-size: calc(var(--diplay-height)*0.35*0.9*0.066666);
+}
+
+#card-preview img.card-base,
+.card img.card-base {
+    width: 100%;
+}
+
+#card-preview img.card-avatar,
+.card img.card-avatar {
+    left: 4.5%;
+    top: 2.1%;
+    width: 91%;
+}
+
+#card-preview .card-power,
+.card .card-power {
+    left: 3%;
+    top: 2.75%;
+    width: 17%;
+    text-align: center;
+    color: black;
+    font-size: 1em;
+}
+
+#card-preview .card-description,
+.card .card-description {
+    left: 5%;
+    top: 59%;
+    width: 90%;
+    height: 38%;
+    text-align: center;
+    color: black;
+    font-size: 1em;
+}
+
+#troll-cards {
+    left: 3%;
+    top: 13%;
+}
+
+#player-cards {
+    left: 3%;
+    top: 52%;
+}
+
+.power {
+    text-align: center;
+    width: 10%;
+}
+
+#troll-power {
+    left: 45%;
+    top: 5%;
+    font-size: calc(var(--diplay-height)*0.04);
+}
+
+#player-power {
+    left: 45%;
+    top: 88%;
+    font-size: calc(var(--diplay-height)*0.04);
+}
+
+#card-preview {
+    height: calc(var(--diplay-height)*0.9);
+    margin-top: calc(var(--diplay-height)*0.05);
+    width: calc(var(--diplay-height)*0.9*400/650);
+    margin-left: calc(var(--diplay-width)*179/520);
+    font-size: calc(var(--diplay-height)*0.9*0.06);
+    text-align: center;
+}
+
+#preview-cancel-button {
+    background-color: rgb(160, 160, 160);
+    top: 43.845%;
+    left: -22%;
+    width: 20%;
+    height: 12.31%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#preview-cancel-button img {
+    margin-left: 20%;
+    margin-top: 20%;
+    width: 60%;
+}
+
+#preview-cancel-button:hover {
+    background-color: rgb(61, 153, 230);
+}
+
+#preview-accept-button {
+    background-color: rgb(160, 160, 160);
+    top: 43.845%;
+    left: 102%;
+    width: 20%;
+    height: 12.31%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#preview-accept-button img {
+    margin-left: 20%;
+    margin-top: 20%;
+    width: 60%;
+}
+
+#preview-accept-button:hover {
+    background-color: rgb(61, 153, 230);
+}
+
+#pass-button {
+    top: 88%;
+    left: 5%;
+    background-color: rgb(160, 160, 160);
+    height: 4.5%;
+    width: 6%;
+    font-size: calc(var(--diplay-height)*0.04);
+    text-align: center;
+    cursor: pointer;
+}
+
+#pass-button:hover {
+    background-color: rgb(61, 153, 230);
+}
+
+.cards-used {
+    text-align: center;
+    width: 20%;
+}
+
+.troll-cards-used span {
+    font-size: calc(var(--diplay-height)*0.04);
+}
+
+.player-cards-used span {
+    font-size: calc(var(--diplay-height)*0.04);
+}
+
+.troll-cards-used {
+    left: 75%;
+    top: 5%;
+    font-size: calc(var(--diplay-height)*0.04);
+}
+
+.player-cards-used {
+    left: 75%;
+    top: 88%;
+    font-size: calc(var(--diplay-height)*0.04);
+}
+
+#turn-label {
+    top: 88%;
+    left: 12%;
+    height: 4%;
+    font-size: calc(var(--diplay-height)*0.04);
+    width: 20%;
+}
+
+#timer {
+    font-size: calc(var(--diplay-height)*0.04);
+}

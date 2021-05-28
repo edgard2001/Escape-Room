@@ -1,0 +1,42 @@
+#display {
+    background-image: url("../images/rooms/Room.png");
+}
+
+#door1 {
+    top: 51.5%;
+    left: 44.8%;
+}
+
+#vase1 {
+    top: 66.5%;
+    left: 20%;
+    width: 4%;
+}
+
+#vase2 {
+    top: 63.5%;
+    left: 38%;
+    width: 3%;
+}
+
+#vase3 {
+    top: 70.5%;
+    left: 15%;
+}
+
+#vase4 {
+    top: 63.5%;
+    left: 32%;
+    width: 3%;
+}
+
+#vase5 {
+    top: 63.5%;
+    left: 55%;
+    width: 3%;
+}
+
+#chest1 {
+    top: 65.5%;
+    left: 60%;
+}

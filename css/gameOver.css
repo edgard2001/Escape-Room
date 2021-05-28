@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+a,
+a:visited {
+    background-color: rgb(160, 160, 160);
+    padding: 2%;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    background-color: rgb(61, 153, 230);
+}
+
+#game-over-stats {
+    display: inline-block;
+    background-color: rgba(100, 100, 100, 0.8);
+    text-align: center;
+    border-radius: 5vh;
+    padding: 5vh 5vw 5vh 5vw;
+}
+
+#gameover-img {
+    height: 25vh;
+}
