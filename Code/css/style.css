@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Indie Flower', 'Pangolin', cursive;
+    font-size: 3vh;
+}
+
+body {
+    background-color: black;
+    color: white;
+    /*background-image: url("../images/Cave.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;*/
+}
+
+#wrapper {
+    width: 90vw;
+    height: 85vh;
+    margin: 10vh 5vw 5vh 5vw;
+}
+
+#settings {
+    position: absolute;
+    top: 5vh;
+    width: 90vw;
+    height: 5vh;
+    overflow: hidden;
+    text-align: center;
+}
+
+#settings img {
+    height: 90%;
+}
+
+#settings input[type=range] {
+    vertical-align: top;
+    width: 20%;
+    margin-top: 2vh;
+    height: 1vh;
+}
+
+#settings input[type=range]::-webkit-slider-thumb {
+    height: 3vh;
+}
+
+iframe {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+}
+
+.inventory-item {
+    float: left;
+    width: 100%;
+    overflow-wrap: break-word;
+    cursor: pointer;
+}
+
+.inventory-item img {
+    width: 100%;
+    background-color: rgba(131, 170, 255, 0.835);
+}
+
+.inventory-item:hover img {
+    background-color: rgba(255, 168, 55, 0.835);
+}
+
+#inventory {
+    padding: 0.5%;
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+}
+
+#dialog {
+    padding: 0.5%;
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+}
+
+@media only screen and (min-aspect-ratio: 5/2) {
+    #settings {
+        width: calc(9vw + 144vh + 18vw);
+        margin-left: calc((90vw - 9vw - 144vh - 18vw)/2);
+        height: 5vh;
+    }
+    #inventory {
+        float: left;
+        width: 10%;
+        margin-left: calc((90vw - 9vw - 144vh - 18vw)/2);
+        height: 85vh;
+        max-height: 85vh;
+        overflow: auto;
+    }
+    #display {
+        float: left;
+        width: 144vh;
+        padding-top: 81vh;
+    }
+    #dialog {
+        float: left;
+        width: 20%;
+        height: 85vh;
+        overflow: auto;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 5/2) {
+    #inventory {
+        float: left;
+        width: 10%;
+        height: 85vh;
+        overflow: auto;
+    }
+    #display {
+        float: left;
+        width: 70%;
+        padding-top: 39.375%;
+    }
+    #dialog {
+        float: left;
+        width: 20%;
+        height: 85vh;
+        overflow: auto;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 3/2) {
+    #inventory {
+        float: left;
+        width: 10%;
+        height: calc(81vw / 16 * 9);
+        overflow: auto;
+    }
+    #display {
+        float: left;
+        width: 90%;
+        padding-top: 50.625%;
+    }
+    #dialog {
+        clear: both;
+        width: 100%;
+        height: calc(90vh - 5vh - 81vw / 16 * 9);
+        overflow: auto;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 1/1) {
+    * {
+        font-size: 4vw;
+    }
+    #inventory {
+        clear: both;
+        width: 100%;
+        height: 10vh;
+        overflow: auto;
+    }
+    #display {
+        clear: both;
+        width: 100%;
+        padding-top: 56.25%;
+    }
+    #dialog {
+        clear: both;
+        width: 100%;
+        height: calc(90vh - 5vh - 10vh - 90vw / 16 * 9);
+        overflow: auto;
+    }
+    .inventory-item {
+        float: left;
+        width: 100%;
+        overflow-wrap: break-word;
+    }
+    .inventory-item img {
+        float: left;
+        width: 9vh;
+        height: auto;
+        margin: 0vh 0.5vh 0.5vh 0.5vh;
+        background-color: rgba(131, 170, 255, 0.835);
+    }
+    .inventory-item p {
+        float: left;
+    }
+}
+
+#display {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+*::selection {
+    background-color: transparent;
+}
+
+
+/*  Object Superclass   */
+
+.object {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+
+.object img {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+}
+
+.object svg {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+}
+
+.object a polygon {
+    fill: rgba(0, 0, 0, 0);
+    stroke: rgba(0, 0, 0, 0);
+    stroke-width: 1%;
+}
+
+.object a polygon:hover {
+    stroke: rgb(0, 255, 255);
+}
+
+
+/*  Object Subclasses   */
+
+.door {
+    width: 10%;
+    padding-top: 11.8%;
+}
+
+.vase {
+    width: 5%;
+}
+
+.chest {
+    width: 15%;
+}
+
+.troll {
+    width: 20%;
+}
+
+
+/*  UI   */
+
+#go-back-button {
+    width: 5%;
+    left: 47.5%;
+    top: 5%;
+}
+
+#dungeon-map-button {
+    width: 5%;
+    left: 5%;
+    top: 5%;
+}
+
+#dungeon-map {
+    display: none;
+    float: left;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    white-space: nowrap;
+    text-align: center;
+    width: 75%;
+    height: 75%;
+    top: 12.5%;
+    left: 12.5%;
+    background-color: rgb(230, 222, 152);
+    color: black;
+}
+
+.dungeon-room-container {
+    display: inline-block;
+    overflow: auto;
+    text-align: center;
+    border: solid 0.1vh black;
+}
+
+.dungeon-room {
+    display: inline-block;
+    padding: 10%;
+}
+
+#dungeon-map-close-button,
+#map-key {
+    text-align: left;
+}
+
+#map-key {
+    float: left;
+    padding: 2%;
+}
+
+#dialog p.narrator {
+    color: rgb(226, 153, 255);
+}
+
+#dialog p.player {
+    color: rgb(169, 255, 176);
+}
+
+#dialog p.trollText {
+    color: rgb(255, 206, 141);
+}

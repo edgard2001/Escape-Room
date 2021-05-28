@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+@media only screen and (min-aspect-ratio: 5/2) {
+     :root {
+        --diplay-width: 144vh;
+        --diplay-height: 81vh;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 5/2) {
+     :root {
+        --diplay-width: 62vw;
+        --diplay-height: 35.4375vw;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 3/2) {
+     :root {
+        --diplay-width: 81vw;
+        --diplay-height: 45.5625vw;
+    }
+}
+
+@media only screen and (max-aspect-ratio: 1/1) {
+     :root {
+        --diplay-width: 90vw;
+        --diplay-height: 50.625vw;
+    }
+}
+
+#hintParagraph b {
+    font-family: 'Finger Paint', cursive;
+    /*skew(10deg, 10deg);*/
+}
+
+#livesParagraph {
+    color: black;
+}
+
+#LifeCounter {
+    background-color: blanchedalmond;
+    visibility: hidden;
+    left: 75%;
+    top: 5.56%;
+}
+
+#LifeCounter b {
+    font-size: calc(var(--diplay-height)*0.9*0.06);
+}
+
+#backButton {
+    top: -2%;
+    left: 0%;
+    margin-left: 1.5%;
+    color: black;
+    font-size: calc(var(--diplay-height)*0.9*0.06);
+    cursor: pointer;
+}
+
+.locations {
+    z-index: 5;
+    height: 9%;
+    width: 9%;
+    position: absolute;
+    margin: 0%;
+}
+
+.locations:hover {
+    background-color: hsla(240, 100%, 25%, 0.5);
+}
+
+#B2 {
+    left: 14.5%;
+    top: 14.5%;
+}
+
+#E2 {
+    left: 41%;
+    top: 14.5%;
+}
+
+#F5 {
+    left: 50%;
+    top: 41%;
+}
+
+#I5 {
+    left: 76.2%;
+    top: 41%;
+}
+
+#F8 {
+    left: 50%;
+    top: 67.5%;
+}
+
+#B9 {
+    left: 14.5%;
+    top: 76.5%;
+}
+
+#puzzleScreen {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 50%;
+    height: 88.89%;
+    left: 25%;
+    top: 5.56%;
+    visibility: hidden;
+    z-index: -1;
+}
+
+#door1 {
+    left: 33%;
+    top: 51.5%;
+}
+
+#puzzleBoard {
+    background-color: beige;
+    border-style: solid;
+    border-color: black;
+    left: 45%;
+    top: 30%;
+    width: calc(20/100*var(--diplay-width));
+    height: calc(20/100*var(--diplay-width));
+}
+
+#hintDiv {
+    width: 22%;
+    height: 56%;
+    top: 24%;
+    left: 7%;
+    transform: perspective(calc(18/100*var(--diplay-width))) rotateY(30deg);
+}
+
+#hintDiv b {
+    font-size: calc(var(--diplay-height)*0.9*0.04);
+}
+
+#go-back-button {
+    width: 5%;
+    left: 70%;
+    top: 5%;
+}
+
+#vase1 {
+    top: 68%;
+    left: 19%;
+    width: 4%;
+}
+
+#vase2 {
+    top: 72%;
+    left: 11%;
+}

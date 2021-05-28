@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cardGame.css">
+    <script src="js/inventory.js"></script>
+    <script src="js/dialog.js"></script>
+    <script src="js/cardGame.js"></script>
+    <script src="js/gameTimer.js"></script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <div id="inventory">Inventory</div>
+
+        <div id="display">
+            <div class="object card-row" id="troll-cards"></div>
+            <div class="object card-row" id="player-cards"></div>
+
+            <div class="object power" id="troll-power">0</div>
+            <div class="object power" id="player-power">0</div>
+
+            <div class="object troll-cards-used">Cards used: <span id="troll-cards-used-span">0</span>/8</div>
+            <div class="object player-cards-used">Cards used: <span id="player-cards-used-span">0</span>/8</div>
+
+            <div class="object" id="card-preview"></div>
+
+            <div class="object" id="pass-button" onclick="passRound()">Pass</div>
+            <div class="object" id="turn-label">Troll Turn</div>
+
+        </div>
+
+        <div id="dialog"></div>
+
+    </div>
+
+</body>
+
+</html>

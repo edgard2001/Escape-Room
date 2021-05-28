@@ -1,0 +1,146 @@
+#display {
+    background-image: url("../images/puzzles/lockpicking/Lockpick_0pin.png");
+}
+
+a {
+    background-color: rgb(160, 160, 160);
+    cursor: pointer;
+    border: none;
+}
+
+a:hover {
+    background-color: rgb(61, 153, 230);
+}
+
+@media only screen and (max-aspect-ratio: 1/1) {
+    .object,
+    a,
+    input,
+    #lockpicksTXT,
+    #lockpicks {
+        font-size: 3vw;
+    }
+}
+
+.object {
+    color: black;
+    text-align: center;
+}
+
+#timer {
+    color: white;
+}
+
+input {
+    border: none;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+#question1 {
+    width: 20%;
+    height: 12%;
+    top: 55%;
+    left: 3%;
+}
+
+#question2 {
+    width: 20%;
+    height: 12%;
+    top: 55%;
+    left: 29%;
+}
+
+#question3 {
+    width: 20%;
+    height: 12%;
+    top: 55%;
+    left: 54%;
+}
+
+#question4 {
+    width: 20%;
+    height: 12%;
+    top: 55%;
+    left: 78%;
+}
+
+#textbox-div1 {
+    width: 10%;
+    height: 10%;
+    top: 70%;
+    left: 3%;
+}
+
+#textbox-div2 {
+    width: 10%;
+    height: 10%;
+    top: 70%;
+    left: 28%;
+}
+
+#textbox-div3 {
+    width: 10%;
+    height: 10%;
+    top: 70%;
+    left: 53%;
+}
+
+#textbox-div4 {
+    width: 10%;
+    height: 10%;
+    top: 70%;
+    left: 77%;
+}
+
+#Submit1 {
+    position: absolute;
+    top: 70%;
+    left: 14%;
+}
+
+#Submit2 {
+    position: absolute;
+    top: 70%;
+    left: 39%;
+    display: none;
+}
+
+#Submit3 {
+    position: absolute;
+    top: 70%;
+    left: 64%;
+    display: none;
+}
+
+#Submit4 {
+    position: absolute;
+    top: 70%;
+    left: 88%;
+    display: none;
+}
+
+#Success {
+    display: none;
+    position: absolute;
+    top: 5%;
+    width: 100%;
+}
+
+#lockpicksTXT {
+    position: absolute;
+    color: white;
+    top: 10%;
+    left: 5%;
+}
+
+
+/*  UI   */
+
+#go-back-button {
+    width: 5%;
+    left: 90.5%;
+    top: 5%;
+}

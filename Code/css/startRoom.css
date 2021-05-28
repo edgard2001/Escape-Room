@@ -1,0 +1,97 @@
+#display {
+    background-image: url("../images/rooms/StartRoom.png");
+}
+
+#door1 {
+    top: 51.5%;
+    left: 56.5%;
+}
+
+#vase1 {
+    top: 64%;
+    left: 66.5%;
+    width: 3%;
+}
+
+#vase2 {
+    top: 66%;
+    left: 73%;
+    width: 3.5%;
+}
+
+#vase3 {
+    top: 69%;
+    left: 78%;
+    width: 4%;
+}
+
+#vase4 {
+    top: 64%;
+    left: 48%;
+    width: 3%;
+}
+
+#vase5 {
+    top: 64%;
+    left: 52%;
+    width: 3%;
+}
+
+#troll1 {
+    top: 40.5%;
+    left: 25.5%;
+}
+
+#troll-options {
+    display: none;
+    overflow: auto;
+    text-align: center;
+    width: 75%;
+    height: 75%;
+    top: 12.5%;
+    left: 12.5%;
+    background-color: rgb(230, 222, 152);
+    color: black;
+}
+
+#troll-options-close-button {
+    text-align: start;
+}
+
+.shop-button,
+.troll-option {
+    display: inline-block;
+    width: 50%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: grey;
+    cursor: pointer;
+}
+
+.shop-button:hover,
+.troll-option:hover {
+    background-color: rgb(61, 153, 230);
+}
+
+.shop-item {
+    float: left;
+    width: 40%;
+    height: 40%;
+    margin: 5%;
+}
+
+.shop-item p {
+    font-size: 0.7em;
+}
+
+.shop-item img {
+    position: relative;
+    height: 40%;
+    object-fit: contain;
+}
+
+.shop-button {
+    width: 48%;
+    margin: 1%;
+    font-size: 0.7em;
+}

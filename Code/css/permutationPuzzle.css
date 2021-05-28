@@ -1,0 +1,46 @@
+#display{
+    background-image: url("../images/Rooms/background.png");
+}
+
+* {
+    border: none;
+}
+
+#board{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    margin: auto;
+    width:  60%;
+    /*padding: 30px;*/
+}
+
+.column {
+    position: relative;
+    float: left;
+    width: 20%;
+    /*padding: 5px;*/
+}
+
+.column svg {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+
+.column a polygon {
+    fill:rgba(0, 0, 0, 0);
+    stroke: rgba(0, 0, 0, 0);
+    stroke-width:1%;
+}
+
+.column a polygon:hover {
+    stroke: rgb(0, 255, 255);
+}
+
+.column img,input,svg {
+    width: 100%;
+}
+
+
+
